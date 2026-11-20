@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La vidéo · Obsidia</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-v2.css">
+</head>
+<body>
+
+  <nav class="menu">
+    <div class="contenu">
+      <a href="index.html"><img src="assets/piste-sas.png" alt="Obsidia, accueil"></a>
+      <div class="liens">
+        <a href="index.html">Accueil</a>
+        <a href="concept.html">Concept</a>
+        <a href="logo.html">Nom et logo</a>
+        <a href="video.html" class="actif">Vidéo</a>
+        <a href="offres.html">Offres</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="entete-page contenu apparait">
+    <span class="etiquette">03 · vidéo</span>
+    <h1>La vidéo</h1>
+    <p>Obsidia présenté en une minute.</p>
+  </header>
+
+  <!-- La vidéo, dans un cadre façon fenêtre -->
+  <section class="fond-clair">
+    <div class="contenu">
+      <div class="fenetre apparait">
+        <div class="fenetre-barre">
+          <span></span><span></span><span></span>
+          <p>obsidia-presentation.mp4</p>
+        </div>
+        <video controls preload="metadata">
+          <source src="assets/obsidia-presentation-web_2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="phrase-fin apparait">Vos objets font des requêtes, Obsidia mène l'enquête.</p>
+    </div>
+  </section>
+
+  <div class="suite contenu">
+    <a class="bouton" href="offres.html">Page suivante : les offres →</a>
+  </div>
+
+  <footer>
+    <div class="contenu pied">
+      <img src="assets/piste-sas.png" alt="Obsidia">
+      <p>Obsidia · projet fictif réalisé pour une présentation BTS SIO</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -4,127 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Obsidia</title>
-  <!-- Polices Google : Open Sans et IBM Plex Mono -->
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <!-- Version 2 du site, en plusieurs pages. La version 1 est gardée dans index-v1.html -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-v2.css">
 </head>
 <body>
 
-  <!-- Menu -->
-  <nav>
+  <!-- Menu (le même sur toutes les pages, "actif" = page en cours) -->
+  <nav class="menu">
     <div class="contenu">
-      <a href="#accueil"><img src="assets/piste-sas.png" alt="Obsidia"></a>
-      <div>
-        <a href="#concept">Concept</a>
-        <a href="#logo">Logo</a>
-        <a href="#video">Vidéo</a>
-        <a href="#prix">Prix</a>
-        <a href="charte.html">Charte</a>
+      <a href="index.html"><img src="assets/piste-sas.png" alt="Obsidia, accueil"></a>
+      <div class="liens">
+        <a href="index.html" class="actif">Accueil</a>
+        <a href="concept.html">Concept</a>
+        <a href="logo.html">Nom et logo</a>
+        <a href="video.html">Vidéo</a>
+        <a href="offres.html">Offres</a>
       </div>
     </div>
   </nav>
 
-  <!-- 1. Accueil -->
-  <section class="accueil" id="accueil">
-    <div class="contenu">
-      <img src="assets/obsidia-logo-sas-symbole.png" alt="Logo Obsidia">
-      <h1>OBSIDIA</h1>
-      <p>Un noir profond pour révéler ce que vos objets cachent.</p>
-    </div>
-  </section>
-
-  <!-- 2. Le concept -->
-  <section class="fond-clair" id="concept">
-    <div class="contenu">
-      <h2>Le concept</h2>
-      <p>Un boîtier qui met en quarantaine vos objets et qui trace leur communication.</p>
-
-      <div class="etapes">
-        <div class="etape">
-          <span class="mono">01</span>
-          <h3>Brancher</h3>
-          <p>On branche l'objet sur Obsidia, pas sur la box.</p>
-          <img class="explication" src="assets/obsidia-explication-1.png" alt="La caméra est branchée sur Obsidia et plus sur la box">
-        </div>
-        <div class="etape">
-          <span class="mono">02</span>
-          <h3>Observer</h3>
-          <p>Pendant 72 h, Obsidia regarde à qui il parle.</p>
-          <img class="explication" src="assets/obsidia-explication-2.png" alt="Obsidia trace les pays et le volume de données envoyés par l'objet">
-        </div>
-        <div class="etape">
-          <span class="mono">03</span>
-          <h3>Décider</h3>
-          <p>Un rapport en français et un verdict.</p>
-          <img class="explication" src="assets/obsidia-explication-3.png" alt="Un rapport avec le verdict accepté">
+  <!-- 1. Accueil : texte à gauche, produit à droite -->
+  <header class="accueil">
+    <div class="contenu accueil-grille">
+      <div class="apparait">
+        <span class="etiquette">boîtier de quarantaine pour objets connectés</span>
+        <h1>OBSIDIA</h1>
+        <p class="accroche">Un noir profond pour révéler ce que vos objets cachent.</p>
+        <div class="boutons">
+          <a class="bouton bouton-plein" href="concept.html">Voir le concept</a>
+          <a class="bouton" href="offres.html">149 € TTC</a>
         </div>
       </div>
+      <img class="accueil-produit apparait" src="assets/obsidia-produit-fond-sombre.png" alt="Le boîtier Obsidia">
+    </div>
+
+    <!-- Bandeau de chiffres clés -->
+    <div class="contenu chiffres apparait">
+      <div><strong>72 h</strong><span>d'observation</span></div>
+      <div><strong>100 %</strong><span>analyse locale</span></div>
+      <div><strong>FR</strong><span>rapport en français</span></div>
+      <div><strong>2 ans</strong><span>de garantie</span></div>
+    </div>
+  </header>
+
+  <!-- 2. La phrase de fin en grand -->
+  <!-- la phrase de fin en grand, pour remplir -->
+  <section class="fond-clair bandeau-citation">
+    <div class="contenu apparait">
+      <span class="etiquette">obsidia</span>
+      <p>Vos objets font des requêtes,<br>Obsidia mène l'enquête.</p>
     </div>
   </section>
 
-  <!-- 3. Pourquoi Obsidia -->
+  <!-- 3. Les autres pages du site -->
   <section>
     <div class="contenu">
-      <h2>Pourquoi Obsidia</h2>
-      <p>L'obsidienne est un verre volcanique noir. Coupée très fine, elle laisse passer la lumière.</p>
-      <img class="produit" src="assets/obsidia-produit-fond-sombre.png" alt="Le boîtier Obsidia">
-    </div>
-  </section>
-
-  <!-- 4. Le logo -->
-  <section class="fond-clair" id="logo">
-    <div class="contenu">
-      <h2>Le logo</h2>
-      <p>J'ai fait 3 logos, j'ai gardé Le Sas : une boîte ouverte, l'objet au milieu et le point vert pour dire qu'il peut entrer.</p>
-
-      <div class="pistes">
-        <div>
-          <img src="assets/piste-eclat.png" alt="Piste L'Éclat">
-          <p class="mono">L'Éclat</p>
-        </div>
-        <div class="retenu">
-          <img src="assets/piste-sas.png" alt="Piste Le Sas, retenue">
-          <p class="mono">Le Sas (retenu)</p>
-        </div>
-        <div>
-          <img src="assets/piste-miroir.png" alt="Piste Le Miroir">
-          <p class="mono">Le Miroir</p>
-        </div>
+      <div class="titre-section apparait">
+        <span class="etiquette">le projet en 4 pages</span>
+        <h2>Pour aller plus loin</h2>
+      </div>
+      <div class="vers-pages">
+        <a class="carte vers-page apparait" href="concept.html">
+          <h3>Le concept</h3>
+          <p>Brancher, observer, décider : comment Obsidia fonctionne.</p>
+          <span>lire →</span>
+        </a>
+        <a class="carte vers-page apparait" href="logo.html">
+          <h3>Nom et logo</h3>
+          <p>D'où vient le nom, et comment j'ai construit le logo.</p>
+          <span>lire →</span>
+        </a>
+        <a class="carte vers-page apparait" href="video.html">
+          <h3>La vidéo</h3>
+          <p>Obsidia présenté en une minute.</p>
+          <span>regarder →</span>
+        </a>
+        <a class="carte vers-page apparait" href="offres.html">
+          <h3>Les offres</h3>
+          <p>Le boîtier, la licence gratuite et la licence Suivi.</p>
+          <span>voir →</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- 5. La vidéo -->
-  <section id="video">
-    <div class="contenu">
-      <h2>La vidéo</h2>
-      <video controls>
-        <source src="assets/obsidia-presentation-web_2.mp4" type="video/mp4">
-      </video>
-      <p>Vos objets font des requêtes, Obsidia mène l'enquête.</p>
-    </div>
-  </section>
-
-  <!-- 6. Prix -->
-  <section class="fond-clair" id="prix">
-    <div class="contenu">
-      <h2>Prix</h2>
-      <p class="prix">149 € TTC</p>
-      <p>Sans abonnement.</p>
-      <ul class="liste-prix">
-        <li>Observation 72 h et rapport en français</li>
-        <li>Analyse 100 % locale</li>
-        <li>Garantie 2 ans</li>
-      </ul>
-      <img class="produit" src="assets/obsidia-produit-fond-sombre.png" alt="Le boîtier Obsidia">
-    </div>
-  </section>
-
-  <!-- 7. Pied de page -->
+  <!-- Pied de page -->
   <footer>
-    <img src="assets/obsidia-logo-sas-symbole.png" alt="Logo Obsidia">
-    <p class="mono">Obsidia · projet fictif réalisé pour une présentation BTS SIO</p>
+    <div class="contenu pied">
+      <img src="assets/piste-sas.png" alt="Obsidia">
+      <p>Obsidia · projet fictif réalisé pour une présentation BTS SIO</p>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

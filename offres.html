@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les offres · Obsidia</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-v2.css">
+</head>
+<body>
+
+  <nav class="menu">
+    <div class="contenu">
+      <a href="index.html"><img src="assets/piste-sas.png" alt="Obsidia, accueil"></a>
+      <div class="liens">
+        <a href="index.html">Accueil</a>
+        <a href="concept.html">Concept</a>
+        <a href="logo.html">Nom et logo</a>
+        <a href="video.html">Vidéo</a>
+        <a href="offres.html" class="actif">Offres</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="entete-page contenu apparait">
+    <span class="etiquette">04 · offres</span>
+    <h1>Prix et offres</h1>
+    <p>On achète le boîtier une fois. Ensuite, on choisit sa licence : gratuite ou avec suivi.</p>
+  </header>
+
+  <!-- Les 3 cartes -->
+  <section class="fond-clair">
+    <div class="contenu">
+      <div class="offres">
+        <!-- Le boîtier -->
+        <article class="carte offre apparait">
+          <span class="etiquette">le boîtier</span>
+          <h3>Obsidia</h3>
+          <p class="prix">149 € <small>TTC</small></p>
+          <p class="sous-prix">paiement unique</p>
+          <img src="assets/obsidia-produit-fond-sombre.png" alt="Le boîtier Obsidia">
+          <ul>
+            <li>Boîtier et câble réseau</li>
+            <li>Garantie 2 ans</li>
+          </ul>
+        </article>
+
+        <!-- Licence gratuite -->
+        <article class="carte offre apparait">
+          <span class="etiquette">licence</span>
+          <h3>Essentielle</h3>
+          <p class="prix">Gratuite</p>
+          <p class="sous-prix">incluse avec le boîtier</p>
+          <ul>
+            <li>Observation 72 h et rapport en français</li>
+            <li>Analyse 100 % locale</li>
+            <li>Mises à jour tous les 3 mois</li>
+            <li>Aide : guide en ligne et FAQ</li>
+          </ul>
+        </article>
+
+        <!-- Licence payante, mise en avant -->
+        <article class="carte offre offre-suivi apparait">
+          <span class="badge">recommandée</span>
+          <span class="etiquette">licence</span>
+          <h3>Suivi</h3>
+          <p class="prix">35 € <small>/ an</small></p>
+          <p class="sous-prix">sans engagement</p>
+          <ul>
+            <li>Tout ce qui est dans l'Essentielle</li>
+            <li>Mises à jour chaque semaine</li>
+            <li>Support par e-mail, réponse sous 48 h</li>
+            <li>Historique des rapports</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tableau pour comparer les 2 licences (colonne Suivi mise en avant) -->
+  <section>
+    <div class="contenu">
+      <div class="titre-section apparait"><span class="etiquette">comparer les licences</span></div>
+
+      <div class="tableau apparait">
+        <!-- Ligne du haut : nom et prix de chaque licence -->
+        <div class="ligne entete">
+          <div></div>
+          <div class="col"><span class="etiquette">licence</span>Essentielle<strong>Gratuite</strong></div>
+          <div class="col suivi"><span class="etiquette">licence</span>Suivi<strong>35 € <small>/ an</small></strong></div>
+        </div>
+
+        <div class="ligne">
+          <div>Observation 72 h et rapport en français</div>
+          <div class="col"><span class="oui" aria-label="oui"></span></div>
+          <div class="col suivi"><span class="oui" aria-label="oui"></span></div>
+        </div>
+        <div class="ligne">
+          <div>Analyse 100 % locale</div>
+          <div class="col"><span class="oui" aria-label="oui"></span></div>
+          <div class="col suivi"><span class="oui" aria-label="oui"></span></div>
+        </div>
+        <div class="ligne">
+          <div>Mises à jour</div>
+          <div class="col">tous les 3 mois</div>
+          <div class="col suivi">chaque semaine</div>
+        </div>
+        <div class="ligne">
+          <div>Aide</div>
+          <div class="col">guide et FAQ</div>
+          <div class="col suivi">e-mail, réponse sous 48 h</div>
+        </div>
+        <div class="ligne">
+          <div>Historique des rapports</div>
+          <div class="col"><span class="non" aria-label="non"></span></div>
+          <div class="col suivi"><span class="oui" aria-label="oui"></span></div>
+        </div>
+        <div class="ligne bas">
+          <div></div>
+          <div class="col"><span class="sous-prix">incluse avec le boîtier</span></div>
+          <div class="col suivi"><span class="sous-prix">sans engagement</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="suite contenu">
+    <a class="bouton" href="index.html">← Retour à l'accueil</a>
+  </div>
+
+  <footer>
+    <div class="contenu pied">
+      <img src="assets/piste-sas.png" alt="Obsidia">
+      <p>Obsidia · projet fictif réalisé pour une présentation BTS SIO</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
